@@ -35,7 +35,7 @@ spec:
             - "status.localhost"
       containers:
         - name: {{ .Chart.Name }}
-          image: {{ template "bugzilla.image" . }}
+          image: "{{ .Values.image.registry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             - name: DB_HOST
