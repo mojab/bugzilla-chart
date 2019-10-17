@@ -38,7 +38,7 @@ Return the proper Bugzilla image name
 {{- $registryName := .Values.image.registry -}}
 {{- $repositoryName := .Values.image.repository -}}
 {{- $tag := .Values.image.tag | toString -}}
-
+{{- end -}}
 {{/*
 Common labels
 */}}
