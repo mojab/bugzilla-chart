@@ -8,7 +8,7 @@ keywords:
   - bug tracking
   - issue tracking
 home: https://bugzilla.org
-icon: https://www.bugzilla.org/img/buggie.png
+icon: https://upload.wikimedia.org/wikipedia/commons/7/7e/Buggie_new.png
 sources:
   - https://github.com/bugzilla/bugzilla
 maintainers:
