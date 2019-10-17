@@ -1,0 +1,17 @@
+apiVersion: v1
+name: bugzilla
+description: Bugzilla bug tracking system
+version: 1.0.1
+appVersion: 5.0.4
+keywords:
+  - bugzilla
+  - bug tracking
+  - issue tracking
+home: https://bugzilla.org
+icon: https://www.bugzilla.org/img/buggie.png
+sources:
+  - https://github.com/bugzilla/bugzilla
+maintainers:
+  - name: MoJaB
+    email: hello@mojab.org
+engine: gotpl
