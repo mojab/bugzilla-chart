@@ -32,6 +32,14 @@ Create chart name and version as used by the chart label.
 {{- end -}}
 
 {{/*
+Return the proper Bugzilla image name
+*/}}
+{{- define "bugzilla.image" -}}
+{{- $registryName := .Values.image.registry -}}
+{{- $repositoryName := .Values.image.repository -}}
+{{- $tag := .Values.image.tag | toString -}}
+
+{{/*
 Common labels
 */}}
 {{- define "bugzilla.labels" -}}
