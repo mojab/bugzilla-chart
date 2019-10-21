@@ -6,8 +6,8 @@ replicaCount: 1
 
 image:
   registry: docker.io
-  repository: nasqueron/bugzilla
-  tag: latest
+  repository: mojab/bugzilla
+  tag: 5.0.6
   pullPolicy: IfNotPresent
 
 
