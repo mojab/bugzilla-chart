@@ -84,10 +84,12 @@ spec:
             httpGet:
               path: /
               port: http
+            {{- toYaml .Values.livenessProbe | nindent 12 }}
           readinessProbe:
             httpGet:
               path: /
               port: http
+            {{- toYaml .Values.readinessProbe | nindent 12 }}
           volumeMounts:
             - mountPath: /var/www/html
               name: bugzilla-data
