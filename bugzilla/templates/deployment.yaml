@@ -58,7 +58,10 @@ spec:
             {{- end }}
             - name: DB_PASSWORD
             {{- if .Values.mariadb.enabled }}
-              value: {{ .Values.mariadb.db.password | quote }}
+              valueFrom:
+                secretKeyRef:
+                  name: {{ template "mariadb.fullname" . }}
+                  key: mariadb-password
             {{- else }}
               value: {{ .Values.externalDatabase.password | quote }}
             {{- end }}
